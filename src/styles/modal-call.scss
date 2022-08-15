@@ -1,0 +1,147 @@
+.modal-call {
+  display: none;
+  position: absolute;
+  padding: 24px 16px;
+  top: 0;
+  right: 0;
+  background-color: $color_white;
+  z-index: 40;
+  width: 100%;
+  min-height: 1024px;
+  box-shadow: 10px 10px 55px rgba(69, 79, 126, 0.25);
+  animation-name: feedbackMove;
+  animation-duration: 0.5s;
+  &__button {
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-family: 'TT Lakes';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: $color_black;
+    margin-bottom: 24px;
+  }
+
+  &__title::before {
+    content: " ";
+    display: block;
+    width: 5px;
+    height: 40px;
+    background-color: $color_title-before;
+    position: absolute;
+    border-radius: 20px;
+    left: 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2 px;
+    input::placeholder {
+      color: $color_placeholder-bullet;
+    }
+    input {
+      padding: 12px 16px;
+      border: 1px solid $color_divider-border;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    position: relative;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    line-height: 16px;
+    color: $color_dark-grey;
+  }
+  &__text span {
+    color: $color_pink;
+  }
+  &__text span:hover {
+    opacity: 0.7;
+  }
+
+  .button-submit {
+    font-family: 'TT Lakes';
+    display: flex;
+    transform: translateY(85px);
+    background-color: $color_pink;
+    border-radius: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 32px;
+    width: 136px;
+    color: $color_white;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-image: url("../img/ic/dropdown.svg");
+    padding-left: 16px;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 87% 50%;
+  }
+  .button-submit:hover {
+    opacity: 0.7;
+  }
+}
+.call-blur {
+  display: none;
+}
+.modal-call--active {
+  display: block;
+}
+
+@media(min-width: 439px) {
+  .modal-call {
+    padding: 40px 32px;
+  }
+}
+@media(min-width: 766px) {
+  .modal-call {
+    max-width: 440px;
+    min-height: 1900px;
+    &__button {
+      position: absolute;
+      top: 40px;
+      left: -70px;
+    }
+  }
+  .call-blur--active {
+    display: block;
+    z-index: 22;
+    position: absolute;
+    width: calc(100% - 440px);
+    opacity: 0.9;
+    min-height: 1900px;
+    margin-right: 440px;
+    animation-name: blurOpacity;
+    animation-duration: 0.8s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media(min-width: 950px) {
+  .modal-call {
+    min-height: 2050px;
+  }
+  .call-blur--active {
+    min-height: 2050px;
+  }
+
+}
+@media(min-width: 1440px) {
+  .modal-call {
+    .button__cancel {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $color_dark-grey;
+  margin-bottom: 19px;
+  padding: 0 16px;
+}
+
+@media(min-width: 766px) {
+  .footer {
+    padding: 0 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    &__crew {
+      flex-basis: 33.333%;
+    }
+    &__politic {
+      flex-basis: 33.333%;
+    }
+    &__info {
+      flex-basis: 33.333%;
+      text-align: end;
+    }
+  }
+}
+
+@media(min-width: 1119px) {
+  .footer {
+    padding: 0 32px;
+  }
+}
