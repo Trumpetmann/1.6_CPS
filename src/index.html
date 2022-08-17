@@ -143,8 +143,12 @@
                             большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и,
                             в свою очередь, советуют нас родным и близким.
                         </div>
-                        <button class="text__button-overflow text__button-overflow--show text__button-overflow--active">Читать далее</button>
-                        <button class="text__button-overflow text__button-overflow--hide">Скрыть</button>
+
+                        <button class="button-container">
+                        <div class="text__button-overflow text__button-overflow--show text__button-overflow--active">Читать далее</div>
+                        <div class="text__button-overflow text__button-overflow--hide">Скрыть</div>
+                        </button>
+
                     </div>
                     <div class="main__content"><img src="content.jpg" alt="content"></div>
                 </div>
@@ -203,9 +207,11 @@
 
             </div>
 
-            <button class="brand-list__button-overflow brand-list__button-overflow--show brand-list__button-overflow--active">Показать все
+            <button class="button-container">
+            <div class="brand-list__button-overflow brand-list__button-overflow--show brand-list__button-overflow--active">Показать все
+            </div>
+            <div class="brand-list__button-overflow brand-list__button-overflow--hide ">Скрыть</div>
             </button>
-            <button class="brand-list__button-overflow brand-list__button-overflow--hide ">Скрыть</button>
         </div>
 
         <div class="block-header header-slider">
@@ -258,9 +264,11 @@
 
         </div>
 
-        <button class="technic-list__button-overflow technic-list__button-overflow--show technic-list__button-overflow--active">Показать все
+        <button class="button-container">
+        <div class="technic-list__button-overflow technic-list__button-overflow--show technic-list__button-overflow--active">Показать все
+        </div>
+        <div class="technic-list__button-overflow technic-list__button-overflow--hide ">Скрыть</div>
         </button>
-        <button class="technic-list__button-overflow technic-list__button-overflow--hide ">Скрыть</button>
     </div>
 
 
@@ -279,7 +287,7 @@
 
     <div class="list__slider price-list__slider slider price-slider swiper-container">
       <div class="slider__wrapper price-slider__wrapper price-slider__wrapper--hide swiper-wrapper">
-        <div class="price-slider__slide swiper-slide slide"><a href="#">
+        <div class="price-slider__slide swiper-slide slide"><div class="slide__container">
           <span class="slide__title">Ремонтные услуги</span>
           <span class="slide__subtitle slide__subtitle--service">Диагностика</span>
           <span class="slide__title">Цена</span>
@@ -288,8 +296,8 @@
           <span class="slide__subtitle slide__subtitle--time">30 мин</span>
           <button class="slide__button">Заказать</button>
           <span class="slide__line"></span>
-        </a></div>
-        <div class="price-slider__slide swiper-slide slide"><a href="#">
+        </div></div>
+        <div class="price-slider__slide swiper-slide slide"><div class="slide__container">
           <span class="slide__title">Ремонтные услуги</span>
           <span class="slide__subtitle slide__subtitle--service">Замена дисплея</span>
           <span class="slide__title">Цена</span>
@@ -299,8 +307,8 @@
           <button class="slide__button">Заказать</button>
           <span class="slide__line"></span>
 
-        </a></div>
-        <div class="price-slider__slide swiper-slide slide"><a href="#">
+        </div></div>
+        <div class="price-slider__slide swiper-slide slide"><div class="slide__container"">
           <span class="slide__title">Ремонтные услуги</span>
           <span class="slide__subtitle slide__subtitle--service">Замена полифонического динамика</span>
           <span class="slide__title">Цена</span>
@@ -310,8 +318,8 @@
           <button class="slide__button">Заказать</button>
           <span class="slide__line"></span>
 
-        </a></div>
-        <div class="price-slider__slide swiper-slide slide"><a href="#">
+        </div></div>
+        <div class="price-slider__slide swiper-slide slide"><div class="slide__container">
           <span class="slide__title">Ремонтные услуги</span>
           <span class="slide__subtitle slide__subtitle--service">Тестирование с выдачей технического заключения</span>
           <span class="slide__title">Цена</span>
@@ -321,8 +329,8 @@
           <button class="slide__button">Заказать</button>
           <span class="slide__line"></span>
 
-        </a></div>
-        <div class="price-slider__slide swiper-slide slide"><a href="#">
+        </div></div>
+        <div class="price-slider__slide swiper-slide slide"><div class="slide__container">
           <span class="slide__title">Ремонтные услуги</span>
           <span class="slide__subtitle slide__subtitle--service">Замена программного обеспечения</span>
           <span class="slide__title">Цена</span>
@@ -331,7 +339,7 @@
           <span class="slide__subtitle slide__subtitle--time">30-120 мин</span>
           <button class="slide__button">Заказать</button>
 
-        </a></div>
+        </div></div>
 
       </div>
       <div class="slider__fade price-slider__fade"></div>

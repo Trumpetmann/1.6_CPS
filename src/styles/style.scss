@@ -160,7 +160,9 @@ $color_placeholder-bullet: #B5B6BC;
 
 		}
 		}
-
+.button-container {
+  background-color: $color_grey;
+}
 	.text {
 			padding: 0 16px;
 			font-family: 'TT Lakes';
@@ -442,6 +444,7 @@ $color_placeholder-bullet: #B5B6BC;
 
 	body {
 		max-width: 1440px;
+    margin: 0 auto;
 	}
 	.wrapper {
 		margin-left: 320px;

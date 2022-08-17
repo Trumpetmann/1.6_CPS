@@ -54,7 +54,7 @@
       height: 200px;
       background-color: $color_white;
       border-radius: 6px;
-      a {
+      .slide__container {
         height: 100%;
         background-color: $color_white;
         p {
@@ -197,7 +197,7 @@
         width: 100%;
         background-color: $color_white;
         border-radius: 0;
-        a {
+        .slide__container {
           display: flex;
           align-items: center;
           height: 100%;
@@ -299,7 +299,7 @@
     }
 
     .price-slider {
-      &__slide a {
+      .slide__container {
         .slide__button {
           left: 88%;
         }
